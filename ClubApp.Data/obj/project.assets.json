@@ -1609,6 +1609,19 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
+      },
+      "ClubApp.Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/ClubApp.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ClubApp.Common.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       }
     }
   },
@@ -6021,10 +6034,16 @@
         "system.xml.xmlserializer.4.3.0.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
+    },
+    "ClubApp.Common/1.0.0": {
+      "type": "project",
+      "path": "../ClubApp.Common/ClubApp.Common.csproj",
+      "msbuildProject": "../ClubApp.Common/ClubApp.Common.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "ClubApp.Common >= 1.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.0",
       "Microsoft.EntityFrameworkCore.Tools >= 5.0.0",
       "Microsoft.Extensions.Configuration.Json >= 5.0.0"
@@ -6061,7 +6080,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\User\\source\\repos\\ClubApp.Api\\ClubApp.Common\\ClubApp.Common.csproj": {
+              "projectPath": "C:\\Users\\User\\source\\repos\\ClubApp.Api\\ClubApp.Common\\ClubApp.Common.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

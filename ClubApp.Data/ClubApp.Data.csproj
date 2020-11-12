@@ -13,4 +13,8 @@
     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="5.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ClubApp.Common\ClubApp.Common.csproj" />
+  </ItemGroup>
+
 </Project>

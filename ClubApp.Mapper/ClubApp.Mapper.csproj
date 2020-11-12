@@ -8,4 +8,10 @@
     <PackageReference Include="AutoMapper" Version="10.1.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ClubApp.Common\ClubApp.Common.csproj" />
+    <ProjectReference Include="..\ClubApp.Data\ClubApp.Data.csproj" />
+    <ProjectReference Include="..\ClubApp.Models\ClubApp.Models.csproj" />
+  </ItemGroup>
+
 </Project>

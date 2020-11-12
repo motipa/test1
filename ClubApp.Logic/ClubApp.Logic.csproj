@@ -12,4 +12,9 @@
     <PackageReference Include="TinyCsvParser" Version="2.6.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ClubApp.Common\ClubApp.Common.csproj" />
+    <ProjectReference Include="..\ClubApp.Mapper\ClubApp.Mapper.csproj" />
+  </ItemGroup>
+
 </Project>
